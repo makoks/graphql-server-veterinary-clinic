@@ -25,7 +25,7 @@ const typeDefs = gql`
     phone: String!
     email: String
     address: String
-    pets: [Animal]
+    pets: [Animal!]
   }
 
   enum Gender {
@@ -39,8 +39,8 @@ const typeDefs = gql`
   }
 
   type Query {
-    animals: [Animal]
-    owners: [Owner]
+    animals: [Animal!]
+    owners: [Owner!]
     animal(id: ID!): Animal
   }
 
