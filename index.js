@@ -53,8 +53,8 @@ const typeDefs = gql`
       gender: Gender,
       caseRecord: String,
       ownerId: ID,
-    ): MutationResponse,
-    deleteAnimal(id: ID!): MutationResponse,
+    ): MutationResponse!,
+    deleteAnimal(id: ID!): MutationResponse!,
   }
 `;
 
